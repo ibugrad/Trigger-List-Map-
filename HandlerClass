@@ -1,3 +1,4 @@
+public class handlerOpp {
   public static void beforeupdate( list<opportunity> opplist , map < id ,opportunity > oldmap){
         for(Opportunity opp:opplist){
             if( (oldmap.get(opp.id).StageName == 'Closed Won' && opp.StageName != 'Closed Won') || 
@@ -6,3 +7,4 @@
                }
          }
     }
+}
