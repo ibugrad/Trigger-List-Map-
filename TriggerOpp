@@ -1,0 +1,3 @@
+if(trigger.isbefore && trigger.isupdate){
+         handlerOpp.beforeupdate( trigger.new , trigger.oldmap );
+      }
