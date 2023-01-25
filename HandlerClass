@@ -1,0 +1,8 @@
+  public static void beforeupdate( list<opportunity> opplist , map < id ,opportunity > oldmap){
+        for(Opportunity opp:opplist){
+            if( (oldmap.get(opp.id).StageName == 'Closed Won' && opp.StageName != 'Closed Won') || 
+                (oldmap.get(opp.id).StageName == 'Closed Lost' && opp.StageName != 'Closed Lost')){
+                   opp.AddError('You can not!!' );
+               }
+         }
+    }
